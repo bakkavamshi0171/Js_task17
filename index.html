@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            text-align: center;
+            font-size: xx-large;
+            padding: 25px;
+        }
+        button{
+            padding: 10px;
+            margin-top: 50px;
+            border-radius: 10px;
+            background-color: blue;color: white;
+            font-size: 20px;font-weight: 700;
+        }
+        body{
+            background-color: black;
+        }
+        h3{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <button ondblclick="demo()">Generate Quote Double Click Here</button>
+        <h3 id="quote">Quote</h3>
+    </div>
+    <script>
+        function demo(){
+
+        let arr = [
+            "The only thing we have to fear is fear itself",
+            "Courage is being scared to death, but saddling up anyway",
+            "The best way to predict your future is to create it",
+            "Believe you can and you're halfway there",
+            "When you have a dream, you've got to grab it and never let go",
+            "In the middle of difficulty lies opportunity",
+            "Life is what happens when you’re busy making other plans",
+            "You must be the change you wish to see in the world",
+            "The greatest glory in living lies not in never falling, but in rising every time we fall",
+            "If life were predictable it would cease to be life, and be without flavour.",
+            "The future belongs to those who believe in the beauty of their dreams",
+            "That which does not kill us makes us stronger",
+            "It does not matter how slowly you go as long as you do not stop",
+            "What we think, we become",
+            "Injustice anywhere is a threat to justice everywhere",
+            "Life is either a daring adventure or nothing at all.",
+            "To love and be loved is to feel the sun from both sides",
+            "The only impossible journey is the one you never begin",
+            "Change your thoughts and you change your world"
+        ]
+        let x = 100000 + Math.floor(Math.random()*90000);
+        document.body.style.backgroundColor = "#"+x;
+
+        let i = Math.floor(Math.random()*arr.length);
+        let h3= document.getElementById("quote");
+        h3.style.color= "white"
+        h3.innerText=arr[i];
+        }
+
+    </script>
+</body>
+</html>
