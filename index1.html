@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="demo()"> Click </button>
+    <p id ="p" >Color Hexa Code : </p>
+    <script>
+        function demo(){
+            let x = 100000 + Math.floor(Math.random()*90000);
+            document.body.style.backgroundColor = "#"+x;
+            let p = document.getElementById("p");
+            p.style.color="white"
+            p.innerText = "Color Hexa Code : #" + x;
+        }
+    </script>
+</body>
+</html>
